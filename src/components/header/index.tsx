@@ -2,6 +2,8 @@
 import { useState } from "react";
 
 import Link from "next/link";
+import { BsCart4 } from "react-icons/bs";
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,7 +35,9 @@ const Navbar = () => {
             <Link href="/contact" className="hover:text-gray-300">
               Contact
             </Link>
-            
+            <Link href="/cartt" className="hover:text-gray-300">
+            <BsCart4 size={24}/>
+            </Link>
           </nav>
 
           
